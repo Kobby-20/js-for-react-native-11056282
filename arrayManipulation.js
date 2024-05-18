@@ -7,3 +7,16 @@ function processArray(numbers) {
   }
   })
 }
+
+function formatArrayStrings(strings, processedNumbers){
+  return strings.map((string, i) => {
+    const number = processedNumbers[i];
+    if(number % 2 === 0) {
+      return string.toUpperCase();
+    } else {
+      return string.toLowerCase();
+    }
+  });
+}
+export {processArray, }
+export {formatArrayStrings}
